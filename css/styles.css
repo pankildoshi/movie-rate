@@ -65,3 +65,31 @@ body {
 .navbar .navbar-nav .nav-btn:hover {
   background-color: var(--red-primary);
 }
+
+/* Carousel styles */
+.row > * {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.carousel-column {
+  height: 500px;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.carousel-inner .carousel-item img {
+  height: 550px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-inner .carousel-item img {
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carousel-inner .carousel-item img {
+    height: 210px;
+  }
+}
