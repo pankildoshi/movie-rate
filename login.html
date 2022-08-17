@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <!-- FontAwesome 4.7.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap 5.0 CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/login-styles.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <main>
+            <div class="container form-transparent justify-content-center my-5 p-3"
+                style="width: auto; max-width: 450px; max-height: 550px; overflow: auto;">
+                <!-- Pills navs -->
+                <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active text-white" id="tab-login" data-bs-toggle="pill"
+                            data-bs-target="#pills-login" href="#" role="tab" aria-controls="pills-login"
+                            aria-selected="true">Login</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link  text-white" id="tab-register" data-bs-toggle="pill" href="#"
+                            data-bs-target="#pills-register" role="tab" aria-controls="pills-register"
+                            aria-selected="false">Register</a>
+                    </li>
+                </ul>
+                <!-- Pills navs -->
+
+                <!-- Pills content -->
+                <div class="tab-content">
+                    <!-- Sign in Form -->
+                    <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+                        <form>
+                            <div class="text-center mb-3">
+                                <p>Sign in with</p>
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="fa fa-2x fa-facebook-square"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="fa fa-2x fa-google"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="fa fa-2x fa-twitter-square"></i>
+                                </button>
+                            </div>
+
+                            <p class="text-center">or</p>
+
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <input type="email" id="loginName" class="form-control" />
+                                <label class="form-label" for="loginName">Email or username</label>
+                            </div>
+
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                                <input type="password" id="loginPassword" class="form-control" />
+                                <label class="form-label" for="loginPassword">Password</label>
+                            </div>
+
+                            <!-- 2 column grid layout -->
+                            <div class="row mb-4">
+                                <div class="col-md-6 d-flex justify-content-center">
+                                    <!-- Checkbox -->
+                                    <div class="form-check mb-3 mb-md-0">
+                                        <input class="form-check-input" type="checkbox" value="" id="loginCheck"
+                                            checked />
+                                        <label class="form-check-label" for="loginCheck"> Remember me </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 d-flex justify-content-center">
+                                    <!-- Simple link -->
+                                    <u><a href="#!" class=" text-white">Forgot password?</a></u>
+                                </div>
+                            </div>
+                            <!-- Submit button -->
+                            <div class="justify-content-center d-flex">
+                                <button type="submit" class="btn btn-submit px-4">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Sign in Form Ended -->
+
+                    <!-- Sign up Form -->
+                    <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+                        <form>
+                            <div class="text-center mb-3">
+                                <p>Sign up with</p>
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="fa fa-2x fa-facebook-square"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="fa fa-2x fa-google"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-link btn-floating mx-1">
+                                    <i class="fa fa-2x fa-twitter-square"></i>
+                                </button>
+                            </div>
+
+                            <p class="text-center">or</p>
+
+                            <!-- Name input -->
+                            <div class="form-outline mb-4">
+                                <input type="text" id="registerName" class="form-control" />
+                                <label class="form-label" for="registerName">Name</label>
+                            </div>
+
+                            <!-- Username input -->
+                            <div class="form-outline mb-4">
+                                <input type="text" id="registerUsername" class="form-control" />
+                                <label class="form-label" for="registerUsername">Username</label>
+                            </div>
+
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <input type="email" id="registerEmail" class="form-control" />
+                                <label class="form-label" for="registerEmail">Email</label>
+                            </div>
+
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                                <input type="password" id="registerPassword" class="form-control" />
+                                <label class="form-label" for="registerPassword">Password</label>
+                            </div>
+
+                            <!-- Repeat Password input -->
+                            <div class="form-outline mb-4">
+                                <input type="password" id="registerRepeatPassword" class="form-control" />
+                                <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+                            </div>
+
+                            <!-- Checkbox -->
+                            <div class="form-check d-flex justify-content-center mb-4">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
+                                    aria-describedby="registerCheckHelpText" />
+                                <label class="form-check-label" for="registerCheck">
+                                    I have read and agree to the terms
+                                </label>
+                            </div>
+
+                            <!-- Submit button -->
+                            <div class="justify-content-center d-flex">
+                                <button type="submit" class="btn btn-submit px-4">Sign up</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Sign up Form Ended -->
+                </div>
+                <!-- Pills content -->
+            </div>
+        </main>
+        <div class="concord-img-wrapper">
+            <img class="concord-img vlv-creative"
+                src="https://assets.nflxext.com/ffe/siteui/vlv3/a1543997-c1fd-4946-92d3-b0a3648b92c7/327506e9-f0a6-4ae6-8115-97ea4c94268d/IN-en-20220808-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+                srcset="https://assets.nflxext.com/ffe/siteui/vlv3/a1543997-c1fd-4946-92d3-b0a3648b92c7/327506e9-f0a6-4ae6-8115-97ea4c94268d/IN-en-20220808-popsignuptwoweeks-perspective_alpha_website_small.jpg 1000w, https://assets.nflxext.com/ffe/siteui/vlv3/a1543997-c1fd-4946-92d3-b0a3648b92c7/327506e9-f0a6-4ae6-8115-97ea4c94268d/IN-en-20220808-popsignuptwoweeks-perspective_alpha_website_medium.jpg 1500w, https://assets.nflxext.com/ffe/siteui/vlv3/a1543997-c1fd-4946-92d3-b0a3648b92c7/327506e9-f0a6-4ae6-8115-97ea4c94268d/IN-en-20220808-popsignuptwoweeks-perspective_alpha_website_large.jpg 1800w"
+                alt="" />
+            <div class="concord-img-gradient"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
