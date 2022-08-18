@@ -126,18 +126,49 @@ body {
 .slider .card {
   flex: 0 0 16.66%;
   scroll-snap-align: start;
-  background-color: transparent;
+  background-color: #1a1a1a;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px,
+    rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  border-radius: 8px;
 }
 
 .slider .card img {
   width: inherit;
   height: 330px;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
 }
 
 .slider::-webkit-scrollbar {
   display: none;
+}
+
+.slider .rating {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 10px 10px;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.slider .card .card-body {
+  color: #fff;
+}
+
+.slider .card .card-body p {
+  font-size: 18px;
+  margin-bottom: 0.25rem;
+}
+
+.slider .card .card-body button {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  color: var(--red-primary);
+  font-weight: bolder;
 }
 
 @media screen and (max-width: 1200px) {
